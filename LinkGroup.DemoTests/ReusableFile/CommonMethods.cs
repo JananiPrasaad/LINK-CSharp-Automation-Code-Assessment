@@ -165,51 +165,6 @@ namespace LinkGroup.DemoTests.ReusableFile
                 throw new Exception(e.ToString());
             }
         }
-
-        //    try
-        //    {
-        //        IWait<IWebDriver> wait = new OpenQA.Selenium.Support.UI.WebDriverWait(driver, TimeSpan.FromMinutes(min));
-        //        IJavaScriptExecutor executor = (IJavaScriptExecutor)driver;
-        //        executor.ExecuteScript("return document.readyState").Equals("complete");
-        //    }
-        //    catch (Exception)
-        //    {
-        //        try
-        //        {
-        //            IWait<IWebDriver> wait = new OpenQA.Selenium.Support.UI.WebDriverWait(driver, TimeSpan.FromMinutes(min));
-        //            IJavaScriptExecutor executor = (IJavaScriptExecutor)driver;
-        //            executor.ExecuteScript("return document.readyState").Equals("complete");
-        //        }
-        //        catch (Exception)
-        //        {
-        //            try
-        //            {
-        //                IWait<IWebDriver> wait = new OpenQA.Selenium.Support.UI.WebDriverWait(driver, TimeSpan.FromMinutes(min));
-        //                IJavaScriptExecutor executor = (IJavaScriptExecutor)driver;
-        //                executor.ExecuteScript("return document.readyState").Equals("complete");
-        //            }
-        //            catch (Exception)
-        //            {
-        //                try
-        //                {
-        //                    IWait<IWebDriver> wait = new OpenQA.Selenium.Support.UI.WebDriverWait(driver, TimeSpan.FromMinutes(min));
-        //                    IJavaScriptExecutor executor = (IJavaScriptExecutor)driver;
-        //                    executor.ExecuteScript("return document.readyState").Equals("complete");
-        //                }
-        //                catch (Exception e)
-        //                {
-        //                    LogFile.LogInformation(e.ToString());
-        //                    CaptureScreenshot();
-        //                    SetupFile._status = "Fail";
-        //                    SetupFile._statusMessage = e.ToString();
-        //                    throw new Exception(e.ToString());
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
-
-
         public static void ExplicitWait(int sec)
         {
             IWait<IWebDriver> wait = new OpenQA.Selenium.Support.UI.WebDriverWait(driver, TimeSpan.FromSeconds(sec));
